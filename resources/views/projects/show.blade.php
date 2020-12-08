@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-
+@section('title','顯示專案')
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -17,31 +17,31 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
+                <strong>名稱:</strong>
                 {{ $project->name }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Introduction:</strong>
+                <strong>介紹:</strong>
                 {{ $project->introduction }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Location:</strong>
+                <strong>位置:</strong>
                 {{ $project->location }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Cost:</strong>
+                <strong>價格:</strong>
                 {{ $project->cost }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Date Created:</strong>
+                <strong>日期:</strong>
                 {{ date_format($project->created_at, 'jS M Y') }}
             </div>
         </div>
